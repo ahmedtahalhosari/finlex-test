@@ -4,6 +4,17 @@
 3) Dockerfile        -> Dockerfile is the main file used to build the image 
 
 
+## Web application description : 
+
+Mainly the web application hosting two pages depending on the path :
+
+1) / , the applicationn will repond with *Hello, World!*.
+
+2) /version , the application will respond with *this the mainn version page :D*.
+
+Please notice that the applicationn is running on port 80 , if you would like to change that you have to go the the CMD line in the Dockerfile and change the port. 
+
+
 ## Steps to build the image and push on dockerhub: 
 
 1) Move to the directory where the Dockerfile exist then run the following command :
