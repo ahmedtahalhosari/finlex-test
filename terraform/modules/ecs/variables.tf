@@ -28,30 +28,30 @@ variable "desired_capacity" {
 
 variable "enable_DP_LB" {
   description = "enable the deletion protection for the created loadbalancer"
-  default = false
+  default     = false
 }
 
 variable "listener_port" {
-  description= "listener port on the loadbalancer"
-  default = "80"
+  description = "listener port on the loadbalancer"
+  default     = "80"
 }
 
 variable "tg_port" {
-  description= "target group port"
-  default = "80"
+  description = "target group port"
+  default     = "80"
 }
 
 variable "container_port" {
-  description= "container port"
-  default = "80"
+  description = "container port"
+  default     = "80"
 }
 
 variable "host_port" {
-  description= "host port"
-  default = "80"
+  description = "host port"
+  default     = "80"
 }
 
 variable "connection_protocol" {
-  description= "The used connection protocol in the port mapping between the host port and container port"
-  default = "tcp"
+  description = "The used connection protocol in the port mapping between the host port and container port"
+  default     = "tcp"
 }
