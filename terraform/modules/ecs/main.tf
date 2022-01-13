@@ -7,19 +7,21 @@ module "ecs-fargate" {
   private_subnets_ids = var.private_subnet_ids
   public_subnets_ids = var.public_subnet_ids
   vpc_id = var.vpc_id
-  desired_count = 2
+  desired_count = var.desired_capacity
+  lb_enable_deletion_protection = var.enable_DP_LB
   lb_http_ports = {
     "default_http": {
-    "listener_port": 80,
-    "target_group_port": 80
+    "listener_port": var.listener_port,
+    "target_group_port": var.tg_port
     }
   }
   lb_https_ports = {}
   port_mappings = [
   {
-    "containerPort": 80,
-    "hostPort": 80,
-    "protocol": "tcp"
+    "containerPort": var.container_port,
+    "hostPort": var.host_port,
+    "protocol": var.connection_protocol
   }
 ]
 }
+

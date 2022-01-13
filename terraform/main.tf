@@ -6,6 +6,6 @@
     private_subnet_ids = module.Admin_VPC.private_subnets
     public_subnet_ids = module.Admin_VPC.public_subnets
     vpc_id = module.Admin_VPC.vpc_id
-
-    
+    desired_capacity = "2"
+    enable_DP_LB = false
 }

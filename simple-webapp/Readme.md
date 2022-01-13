@@ -8,11 +8,11 @@
 
 Mainly the web application hosting two pages depending on the path :
 
-1) / , the applicationn will repond with *Hello, World!*.
+1) / , the application will repond with *Hello, World!*.
 
-2) /version , the application will respond with *this the mainn version page :D*.
+2) /version , the application will respond with *this the main version page :D*.
 
-Please notice that the applicationn is running on port 80 , if you would like to change that you have to go the the CMD line in the Dockerfile and change the port. 
+Please notice that the application is running on port 80 , if you would like to change that you have to go the the CMD line in the Dockerfile and change the port. 
 
 
 ## Steps to build the image and push on dockerhub: 
