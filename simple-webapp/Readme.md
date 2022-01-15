@@ -30,3 +30,4 @@ $ docker build -t ahmedtahalhosari/sample-webapp:1.1 .
 $ docker push ahmedtahalhosari/sample-webapp:1.1
 ```
 
+please make sure that you are sign in on dockerhub before pushinng the image
